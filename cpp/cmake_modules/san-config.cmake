@@ -1,3 +1,6 @@
+# CXY Fork
+# CMake example to config asan&tsan
+
 # Clang does not support using ASAN and TSAN simultaneously.
 if ("${ARROW_USE_ASAN}" AND "${ARROW_USE_TSAN}")
   message(SEND_ERROR "Can only enable one of ASAN or TSAN at a time")
